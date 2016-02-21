@@ -3,17 +3,17 @@
   "displayName": "AngularJs 1.x Code Snippets",
   "description": "AngularJs 1.x Code Snippets",
   "publisher": "alexandersage",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
   "scripts": {
-    "compile": "node ."
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node .; node ./node_modules/vscode/bin/compile -watch -p ./"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/sagea/vscode-angular1-snippets.git"
   },
   "engines": {
-    "vscode": "0.10.x"
+    "vscode": "^0.10.6"
   },
   "categories": [
     "Snippets"
@@ -23,7 +23,7 @@
     "visual studio code",
     "snippets"
   ],
-  "contributs": {
+  "contributes": {
     "snippets": [
       {
         "language": "javascript",
@@ -34,6 +34,7 @@
   "devDependencies": {
     "fs-path": "0.0.22",
     "js-beautify": "^1.6.2",
-    "lodash": "^4.5.0"
+    "lodash": "^4.5.0",
+    "xml2json": "^0.9.0"
   }
 }

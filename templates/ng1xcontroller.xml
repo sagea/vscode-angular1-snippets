@@ -1,0 +1,27 @@
+<snippet>
+    <prefix>ng1xcontroller</prefix>
+    <description>Angular 1.x Controller</description>
+    <displayName>Angular Controller</displayName>
+    <body>
+        <![CDATA[
+        (function(){
+    'use strict';
+
+    angular
+        .module('${Module}')
+        .controller('${Controller}Ctrl', ${Controller}Ctrl)
+
+    function ${Controller}Ctrl(${Dependencies}){
+        var vm = this;
+        $0
+        init();
+
+        function init(){
+        }
+
+    }
+
+}())
+        ]]>
+    </body>
+</snippet>

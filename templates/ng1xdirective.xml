@@ -1,4 +1,10 @@
-(function () {
+<snippet>
+    <prefix>ng1xdirective</prefix>
+    <displayName>Angular Directive</displayName>
+    <description>Angular 1.x Directive</description>
+    <body>
+        <![CDATA[
+        (function () {
     'use strict';
 
     angular
@@ -25,11 +31,14 @@
         return {
             bindToController: true,
             controller: ${Controller}Controller,
-            controllerAs: '${ControllerAs}',
+            controllerAs: '${Ctrl}',
             link: link,
-            restrict: 'AE',
+            restrict: '${AE}',
             scope: {},
         }
     }
 
 } ());
+        ]]>
+    </body>
+</snippet>
