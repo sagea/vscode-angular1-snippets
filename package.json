@@ -4,7 +4,10 @@
   "description": "AngularJs 1.x Code Snippets",
   "publisher": "alexandersage",
   "version": "1.0.0",
-  "scripts": "node index",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node ."
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sagea/vscode-angular1-snippets.git"
@@ -29,6 +32,7 @@
     ]
   },
   "devDependencies": {
+    "fs-path": "0.0.22",
     "js-beautify": "^1.6.2",
     "lodash": "^4.5.0"
   }

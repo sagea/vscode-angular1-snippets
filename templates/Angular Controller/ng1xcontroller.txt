@@ -1,0 +1,19 @@
+(function () {
+    'use strict';
+
+    angular
+        .module ('${module}')
+        .controller ('${controller}Ctrl', ${controller}Ctrl);
+
+
+    function ${controller}Ctrl(${dependencies}) {
+        var vm = this;
+
+        init ();
+
+        function init() {
+
+        }
+    }
+
+} ());

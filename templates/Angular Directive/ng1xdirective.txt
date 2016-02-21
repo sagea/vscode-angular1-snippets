@@ -1,0 +1,35 @@
+(function () {
+    'use strict';
+
+    angular
+        .module ('${Module}')
+        .directive ('${Directive}', ${Directive});
+
+
+    function ${Directive}(${Dependencies}) {
+
+        function ${Controller}Controller(){
+            var vm = this;
+            $0
+            init();
+
+            function init(){
+
+            }
+        }
+
+        function link(){
+
+        }
+
+        return {
+            bindToController: true,
+            controller: ${Controller}Controller,
+            controllerAs: '${ControllerAs}',
+            link: link,
+            restrict: 'AE',
+            scope: {},
+        }
+    }
+
+} ());

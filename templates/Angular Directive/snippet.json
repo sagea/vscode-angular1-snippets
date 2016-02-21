@@ -1,0 +1,5 @@
+{
+  "prefix": "ng1xdirective",
+  "description": "Angular 1.x Directive",
+  "body": "./ng1xdirective.txt"
+}
