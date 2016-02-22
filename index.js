@@ -22,12 +22,10 @@ function compileSnippet(srcDirectory, output) {
             return _.merge (result, snippet);
         }, {})
         .value();
-    //console.log(snippets);
 
     fspath.writeFileSync (output || 'snippets/javascript.json', JSON.stringify (snippets, null, '\t'));
 
     function getSnippet(snippetName){
-        //var newSnippet = {};
         var result = {};
         if(path.parse(snippetName).ext !== '.xml'){
             return;
