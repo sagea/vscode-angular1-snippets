@@ -1,6 +1,72 @@
 {
+	"Angular Component": {
+		"prefix": "ngcomponent",
+		"description": "Angular 1.x Component",
+		"body": [
+			"(function () {",
+			"    'use strict';",
+			"",
+			"    angular",
+			"        .module ('${Module}')",
+			"        .component ('${component}', ${component}());",
+			"",
+			"",
+			"    function ${component}() {",
+			"",
+			"        function ${component}Controller(){",
+			"            var vm = this;",
+			"            $0",
+			"            init();",
+			"",
+			"            function init(){",
+			"",
+			"            }",
+			"        }",
+			"",
+			"        return {",
+			"            bindings: {},",
+			"            controller: ${component}Controller,",
+			"            controllerAs: '${$ctrl}'",
+			"        }",
+			"    }",
+			"",
+			"} ());"
+		]
+	},
+	"Angular Run": {
+		"prefix": "ngrun",
+		"description": "Angular 1.x Run",
+		"body": [
+			"(function(){",
+			"    'use strict';",
+			"",
+			"    angular",
+			"        .module('${Module}')",
+			"        .run(${Run}Run)",
+			"",
+			"    function ${Run}Run(${Dependencies}){",
+			"        $0",
+			"    }",
+			"",
+			"}());"
+		]
+	},
+	"Angular Constant": {
+		"prefix": "ngconstant",
+		"description": "Angular 1.x Constant",
+		"body": [
+			"(function(){",
+			"    'use strict';",
+			"",
+			"    angular",
+			"        .module('${Module}')",
+			"        .constant('${CONSTANT}', ${Value});",
+			"",
+			"}());"
+		]
+	},
 	"Angular Controller": {
-		"prefix": "ng1xcontroller",
+		"prefix": "ngcontroller",
 		"description": "Angular 1.x Controller",
 		"body": [
 			"(function(){",
@@ -20,11 +86,11 @@
 			"",
 			"    }",
 			"",
-			"}())"
+			"}());"
 		]
 	},
 	"Angular Directive": {
-		"prefix": "ng1xdirective",
+		"prefix": "ngdirective",
 		"description": "Angular 1.x Directive",
 		"body": [
 			"(function () {",
@@ -32,12 +98,12 @@
 			"",
 			"    angular",
 			"        .module ('${Module}')",
-			"        .directive ('${Directive}', ${Directive});",
+			"        .directive ('${directive}', ${directive});",
 			"",
 			"",
-			"    function ${Directive}(${Dependencies}) {",
+			"    function ${directive}(${Dependencies}) {",
 			"",
-			"        function ${Controller}Controller(){",
+			"        function ${directive}Controller(){",
 			"            var vm = this;",
 			"            $0",
 			"            init();",
@@ -53,7 +119,7 @@
 			"",
 			"        return {",
 			"            bindToController: true,",
-			"            controller: ${Controller}Controller,",
+			"            controller: ${directive}Controller,",
 			"            controllerAs: '${Ctrl}',",
 			"            link: link,",
 			"            restrict: '${AE}',",
@@ -62,6 +128,119 @@
 			"    }",
 			"",
 			"} ());"
+		]
+	},
+	"Angular Factory": {
+		"prefix": "ngfactory",
+		"description": "Angular 1.x Factory",
+		"body": [
+			"(function(){",
+			"    'use strict';",
+			"",
+			"    angular",
+			"        .module('${Module}')",
+			"        .factory('${Factory}', ${Factory})",
+			"",
+			"    function ${Factory}(${Dependencies}){",
+			"",
+			"        return {",
+			"            ${fn}: ${fn}",
+			"        }",
+			"",
+			"        function ${fn}(){",
+			"            $0",
+			"        }",
+			"    }",
+			"",
+			"}());"
+		]
+	},
+	"Angular Filter": {
+		"prefix": "ngfilter",
+		"description": "Angular 1.x Filter",
+		"body": [
+			"(function(){",
+			"    'use strict';",
+			"",
+			"    angular",
+			"        .module('${Module}')",
+			"        .filter('${Filter}', ${Filter})",
+			"",
+			"    function ${Filter}(){",
+			"",
+			"        return ${Filter}Fn;",
+			"",
+			"        function ${Filter}Fn(${Params}){",
+			"            $0",
+			"            return ${Params}",
+			"        }",
+			"    }",
+			"",
+			"}());"
+		]
+	},
+	"Angular Module": {
+		"prefix": "ngmodule",
+		"description": "Angular 1.x Module",
+		"body": [
+			"(function(){",
+			"    'use strict';",
+			"",
+			"    angular",
+			"        .module('${Module}', [",
+			"            $0",
+			"        ]);",
+			"",
+			"}());"
+		]
+	},
+	"Angular Provider": {
+		"prefix": "ngprovider",
+		"description": "Angular 1.x Provider",
+		"body": [
+			"(function(){",
+			"    'use strict';",
+			"",
+			"    angular",
+			"        .module('${Module}')",
+			"        .provider('${Provider}', ${Provider})",
+			"",
+			"    function ${Provider}(){",
+			"        this.$get = function(${Dependencies}){",
+			"            return {",
+			"                ${fn}: ${fn}",
+			"            }",
+			"",
+			"            function ${fn}(){",
+			"                $0",
+			"            }",
+			"        }",
+			"    }",
+			"",
+			"}());"
+		]
+	},
+	"Angular Service": {
+		"prefix": "ngservice",
+		"description": "Angular 1.x Service",
+		"body": [
+			"(function(){",
+			"    'use strict';",
+			"",
+			"    angular",
+			"        .module('${Module}')",
+			"        .service('${Service}', ${Service})",
+			"",
+			"    function ${Service}(${Dependencies}){",
+			"",
+			"        this.${fn} = $fn;",
+			"",
+			"        function ${fn}(){",
+			"            $0",
+			"        }",
+			"    }",
+			"",
+			"}());"
 		]
 	}
 }

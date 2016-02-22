@@ -1,7 +1,7 @@
 <snippet>
-    <prefix>ngfactory</prefix>
-    <description>Angular 1.x Factory</description>
-    <displayName>Angular Factory</displayName>
+    <prefix>ngrun</prefix>
+    <description>Angular 1.x Run</description>
+    <displayName>Angular Run</displayName>
     <body>
         <![CDATA[
         (function(){
@@ -9,17 +9,10 @@
 
     angular
         .module('${Module}')
-        .factory('${Factory}', ${Factory})
+        .run(${Run}Run)
 
-    function ${Factory}(${Dependencies}){
-
-        return {
-            ${fn}: ${fn}
-        }
-
-        function ${fn}(){
-            $0
-        }
+    function ${Run}Run(${Dependencies}){
+        $0
     }
 
 }());

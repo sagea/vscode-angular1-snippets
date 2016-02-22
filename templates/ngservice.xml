@@ -1,5 +1,5 @@
 <snippet>
-    <prefix>ng1xservice</prefix>
+    <prefix>ngservice</prefix>
     <description>Angular 1.x Service</description>
     <displayName>Angular Service</displayName>
     <body>

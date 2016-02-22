@@ -16,6 +16,7 @@
         return ${Filter}Fn;
 
         function ${Filter}Fn(${Params}){
+            $0
             return ${Params}
         }
     }

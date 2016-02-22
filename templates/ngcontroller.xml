@@ -1,5 +1,5 @@
 <snippet>
-    <prefix>ng1xcontroller</prefix>
+    <prefix>ngcontroller</prefix>
     <description>Angular 1.x Controller</description>
     <displayName>Angular Controller</displayName>
     <body>

@@ -1,7 +1,7 @@
 <snippet>
-    <prefix>ngservice</prefix>
-    <description>Angular 1.x Service</description>
-    <displayName>Angular Service</displayName>
+    <prefix>ngprovider</prefix>
+    <description>Angular 1.x Provider</description>
+    <displayName>Angular Provider</displayName>
     <body>
         <![CDATA[
         (function(){
@@ -9,14 +9,17 @@
 
     angular
         .module('${Module}')
-        .service('${Service}', ${Service})
+        .provider('${Provider}', ${Provider})
 
-    function ${Service}(${Dependencies}){
+    function ${Provider}(){
+        this.$get = function(${Dependencies}){
+            return {
+                ${fn}: ${fn}
+            }
 
-        this.${fn} = $fn;
-
-        function ${fn}(){
-            $0
+            function ${fn}(){
+                $0
+            }
         }
     }
 

@@ -1,16 +1,15 @@
 <snippet>
-    <prefix>ngmodule</prefix>
-    <description>Angular 1.x Module</description>
-    <displayName>Angular Module</displayName>
+    <prefix>ngconstant</prefix>
+    <description>Angular 1.x Constant</description>
+    <displayName>Angular Constant</displayName>
     <body>
         <![CDATA[
         (function(){
     'use strict';
 
     angular
-        .module('${Module}', [
-            $0
-        ]);
+        .module('${Module}')
+        .constant('${CONSTANT}', ${Value});
 
 }());
         ]]>

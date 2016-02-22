@@ -1,5 +1,5 @@
 <snippet>
-    <prefix>ng1xcomponent</prefix>
+    <prefix>ngcomponent</prefix>
     <displayName>Angular Component</displayName>
     <description>Angular 1.x Component</description>
     <body>
@@ -14,7 +14,7 @@
 
     function ${component}() {
 
-        function ${Controller}Controller(){
+        function ${component}Controller(){
             var vm = this;
             $0
             init();
@@ -26,7 +26,7 @@
 
         return {
             bindings: {},
-            controller: ${Controller}Controller,
+            controller: ${component}Controller,
             controllerAs: '${$ctrl}'
         }
     }

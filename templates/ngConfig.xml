@@ -1,7 +1,7 @@
 <snippet>
-    <prefix>ngrun</prefix>
-    <description>Angular 1.x Run</description>
-    <displayName>Angular Run</displayName>
+    <prefix>ngconfig</prefix>
+    <description>Angular 1.x Config</description>
+    <displayName>Angular Config</displayName>
     <body>
         <![CDATA[
         (function(){
@@ -9,9 +9,9 @@
 
     angular
         .module('${Module}')
-        .run('${Run}Run', ${Run}Run)
+        .config(${Config}Config)
 
-    function ${Run}Run(${Dependencies}){
+    function ${Config}Config(${Dependencies}){
         $0
     }
 

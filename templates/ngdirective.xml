@@ -1,5 +1,5 @@
 <snippet>
-    <prefix>ng1xdirective</prefix>
+    <prefix>ngdirective</prefix>
     <displayName>Angular Directive</displayName>
     <description>Angular 1.x Directive</description>
     <body>
@@ -14,7 +14,7 @@
 
     function ${directive}(${Dependencies}) {
 
-        function ${Controller}Controller(){
+        function ${directive}Controller(){
             var vm = this;
             $0
             init();
@@ -30,7 +30,7 @@
 
         return {
             bindToController: true,
-            controller: ${Controller}Controller,
+            controller: ${directive}Controller,
             controllerAs: '${Ctrl}',
             link: link,
             restrict: '${AE}',
