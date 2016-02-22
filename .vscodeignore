@@ -3,3 +3,5 @@
 node_modules/
 templates/
 index.js
+.gitignore
+.vscode
