@@ -1,0 +1,21 @@
+<snippet>
+    <prefix>ngrun</prefix>
+    <description>Angular 1.x Run</description>
+    <displayName>Angular Run</displayName>
+    <body>
+        <![CDATA[
+        (function(){
+    'use strict';
+
+    angular
+        .module('${Module}')
+        .run('${Run}Run', ${Run}Run)
+
+    function ${Run}Run(${Dependencies}){
+        $0
+    }
+
+}());
+        ]]>
+    </body>
+</snippet>

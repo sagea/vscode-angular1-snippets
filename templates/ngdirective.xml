@@ -9,10 +9,10 @@
 
     angular
         .module ('${Module}')
-        .directive ('${Directive}', ${Directive});
+        .directive ('${directive}', ${directive});
 
 
-    function ${Directive}(${Dependencies}) {
+    function ${directive}(${Dependencies}) {
 
         function ${Controller}Controller(){
             var vm = this;

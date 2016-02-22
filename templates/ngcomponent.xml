@@ -1,0 +1,37 @@
+<snippet>
+    <prefix>ng1xcomponent</prefix>
+    <displayName>Angular Component</displayName>
+    <description>Angular 1.x Component</description>
+    <body>
+        <![CDATA[
+        (function () {
+    'use strict';
+
+    angular
+        .module ('${Module}')
+        .component ('${component}', ${component}());
+
+
+    function ${component}() {
+
+        function ${Controller}Controller(){
+            var vm = this;
+            $0
+            init();
+
+            function init(){
+
+            }
+        }
+
+        return {
+            bindings: {},
+            controller: ${Controller}Controller,
+            controllerAs: '${$ctrl}'
+        }
+    }
+
+} ());
+        ]]>
+    </body>
+</snippet>

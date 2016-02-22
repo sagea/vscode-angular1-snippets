@@ -1,0 +1,26 @@
+<snippet>
+    <prefix>ngfilter</prefix>
+    <description>Angular 1.x Filter</description>
+    <displayName>Angular Filter</displayName>
+    <body>
+        <![CDATA[
+        (function(){
+    'use strict';
+
+    angular
+        .module('${Module}')
+        .filter('${Filter}', ${Filter})
+
+    function ${Filter}(){
+
+        return ${Filter}Fn;
+
+        function ${Filter}Fn(${Params}){
+            return ${Params}
+        }
+    }
+
+}());
+        ]]>
+    </body>
+</snippet>

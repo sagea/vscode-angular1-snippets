@@ -1,0 +1,18 @@
+<snippet>
+    <prefix>ngmodule</prefix>
+    <description>Angular 1.x Module</description>
+    <displayName>Angular Module</displayName>
+    <body>
+        <![CDATA[
+        (function(){
+    'use strict';
+
+    angular
+        .module('${Module}', [
+            $0
+        ]);
+
+}());
+        ]]>
+    </body>
+</snippet>
