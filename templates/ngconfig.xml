@@ -1,0 +1,21 @@
+<snippet>
+    <prefix>ngconfig</prefix>
+    <description>Angular 1.x Config</description>
+    <displayName>Angular Config</displayName>
+    <body>
+        <![CDATA[
+        (function(){
+    'use strict';
+
+    angular
+        .module('${Module}')
+        .config(${Config}Config)
+
+    function ${Config}Config(${Dependencies}){
+        $0
+    }
+
+}());
+        ]]>
+    </body>
+</snippet>
