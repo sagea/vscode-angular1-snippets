@@ -33,18 +33,18 @@
 			"} ());"
 		]
 	},
-	"Angular Run": {
-		"prefix": "ngrun",
-		"description": "Angular 1.x Run",
+	"Angular Config": {
+		"prefix": "ngconfig",
+		"description": "Angular 1.x Config",
 		"body": [
 			"(function(){",
 			"    'use strict';",
 			"",
 			"    angular",
 			"        .module('${Module}')",
-			"        .run(${Run}Run)",
+			"        .config(${Config}Config)",
 			"",
-			"    function ${Run}Run(${Dependencies}){",
+			"    function ${Config}Config(${Dependencies}){",
 			"        $0",
 			"    }",
 			"",
@@ -220,6 +220,24 @@
 			"}());"
 		]
 	},
+	"Angular Run": {
+		"prefix": "ngrun",
+		"description": "Angular 1.x Run",
+		"body": [
+			"(function(){",
+			"    'use strict';",
+			"",
+			"    angular",
+			"        .module('${Module}')",
+			"        .run(${Run}Run)",
+			"",
+			"    function ${Run}Run(${Dependencies}){",
+			"        $0",
+			"    }",
+			"",
+			"}());"
+		]
+	},
 	"Angular Service": {
 		"prefix": "ngservice",
 		"description": "Angular 1.x Service",
@@ -233,7 +251,7 @@
 			"",
 			"    function ${Service}(${Dependencies}){",
 			"",
-			"        this.${fn} = $fn;",
+			"        this.${fn} = ${fn};",
 			"",
 			"        function ${fn}(){",
 			"            $0",
