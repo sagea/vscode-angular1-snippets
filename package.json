@@ -4,6 +4,7 @@
   "description": "AngularJs 1.x Code Snippets",
   "publisher": "alexandersage",
   "version": "0.0.1",
+  "icon": "icon_128x.png",
   "scripts": {
     "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
     "compile": "node .; node ./node_modules/vscode/bin/compile -watch -p ./"
