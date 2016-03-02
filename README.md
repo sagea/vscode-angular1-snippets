@@ -17,3 +17,17 @@ Angular 1.x snippets for Visual Studio Code.
 ```
 ## How to Install
 Coming soon...
+
+## Contribute
+Feel like something is missing? 
+Send in a pull request!
+
+https://github.com/sagea/vscode-angular1-snippets
+
+*IMPORTANT*
+Don't forget to credit yourself!
+Add yourself as a contributor to the README.MD and package.json file.
+
+## Contributors
+
+* Alexander Sage: [https://twitter.com/EvolvedTree](https://twitter.com/EvolvedTree)
