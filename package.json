@@ -2,8 +2,11 @@
   "name": "angular1-code-snippets",
   "displayName": "AngularJs 1.x Code Snippets",
   "description": "AngularJs 1.x Code Snippets",
-  "publisher": "alexandersage",
   "version": "0.0.1",
+  "contributors": [
+    {"name": "Alexander Sage", "url": "https://twitter.com/EvolvedTree", "email": "sagezander@gmail.com"},
+  ],
+  "publisher": "Alexander Sage <sagezander@gmail.com> (https://twitter.com/EvolvedTree)",
   "icon": "icon_128x.png",
   "scripts": {
     "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
