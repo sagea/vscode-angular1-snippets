@@ -11,6 +11,7 @@
         .module('${Module}')
         .service('${Service}', ${Service})
 
+    /** @ngInject */
     function ${Service}(${Dependencies}){
 
         this.${fn} = ${fn};

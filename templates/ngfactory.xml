@@ -11,6 +11,7 @@
         .module('${Module}')
         .factory('${Factory}', ${Factory})
 
+    /** @ngInject */
     function ${Factory}(${Dependencies}){
 
         return {
