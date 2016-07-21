@@ -11,6 +11,7 @@
         .module('${Module}')
         .controller('${Controller}Ctrl', ${Controller}Ctrl)
 
+    /** @ngInject */
     function ${Controller}Ctrl(${Dependencies}){
         var vm = this;
         $0

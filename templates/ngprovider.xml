@@ -11,8 +11,12 @@
         .module('${Module}')
         .provider('${Provider}', ${Provider})
 
-    function ${Provider}(){
-        this.$get = function(${Dependencies}){
+    /** @ngInject */
+    function ${Provider}(${Dependencies}){
+        this.$get = ${Provider}Fn
+        
+        /** @ngInject */
+        function ${Provider}Fn(${Dependencies2}){
             return {
                 ${fn}: ${fn}
             }

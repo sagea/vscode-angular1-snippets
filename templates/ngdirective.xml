@@ -12,6 +12,7 @@
         .directive ('${directive}', ${directive});
 
 
+    /** @ngInject */
     function ${directive}(${Dependencies}) {
 
         function ${directive}Controller(){

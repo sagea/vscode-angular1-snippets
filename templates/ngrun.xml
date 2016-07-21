@@ -11,6 +11,7 @@
         .module('${Module}')
         .run(${Run}Run)
 
+    /** @ngInject */
     function ${Run}Run(${Dependencies}){
         $0
     }
